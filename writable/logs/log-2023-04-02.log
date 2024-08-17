@@ -1,0 +1,30 @@
+CRITICAL - 2023-04-02 11:47:05 --> Class "App\Controllers\model" not found
+in APPPATH/Controllers/Create_Account.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 11:49:01 --> Undefined constant "App\Controllers\App\Models\Create_Account_model"
+in APPPATH/Controllers/Create_Account.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 11:49:23 --> Call to undefined function App\Controllers\App\Models\Create_Account_model()
+in APPPATH/Controllers/Create_Account.php on line 35.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 11:52:42 --> Class "app\Models\Create_Account_model" not found
+in APPPATH/Controllers/Create_Account.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-02 11:54:13 --> Class "app\Models\Create_Account_model" not found
+in APPPATH/Controllers/Create_Account.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
