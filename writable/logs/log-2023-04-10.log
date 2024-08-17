@@ -1,0 +1,129 @@
+CRITICAL - 2023-04-10 05:18:36 --> Undefined variable $session
+in APPPATH/Controllers/Create_Post.php on line 17.
+ 1 APPPATH/Controllers/Create_Post.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 05:20:05 --> mysqli_sql_exception: Column 'postContent' cannot be null in /var/www/htdocs/asm/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/asm/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/asm/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/asm/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/asm/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/asm/app/Models/Create_Post_model.php(20): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/asm/app/Controllers/Create_Post.php(25): App\Models\Create_Post_model->insert_post()
+#6 /var/www/htdocs/asm/system/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+#7 /var/www/htdocs/asm/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/asm/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/asm/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 05:20:05 --> Column 'postContent' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Create_Post_model.php(20): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Create_Post.php(25): App\Models\Create_Post_model->insert_post()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 05:21:57 --> Class "App\Controllers\Create_Post_model" not found
+in APPPATH/Controllers/Create_Post.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 07:39:46 --> Class "App\Controllers\Create_Post_model" not found
+in APPPATH/Controllers/Create_Post.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 07:40:29 --> mysqli_sql_exception: Column 'postUsername' cannot be null in /var/www/htdocs/asm/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/asm/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/asm/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/asm/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/asm/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/asm/app/Models/Create_Post_model.php(20): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/asm/app/Controllers/Create_Post.php(26): App\Models\Create_Post_model->insert_post()
+#6 /var/www/htdocs/asm/system/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+#7 /var/www/htdocs/asm/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/asm/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/asm/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 07:40:29 --> Column 'postUsername' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Create_Post_model.php(20): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Create_Post.php(26): App\Models\Create_Post_model->insert_post()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 07:41:47 --> mysqli_sql_exception: Column 'postUsername' cannot be null in /var/www/htdocs/asm/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/asm/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/asm/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/asm/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/asm/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/asm/app/Models/Create_Post_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/asm/app/Controllers/Create_Post.php(26): App\Models\Create_Post_model->insert_post()
+#6 /var/www/htdocs/asm/system/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+#7 /var/www/htdocs/asm/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/asm/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/asm/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 07:41:47 --> Column 'postUsername' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Create_Post_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Create_Post.php(26): App\Models\Create_Post_model->insert_post()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 07:47:00 --> mysqli_sql_exception: Column 'postUsername' cannot be null in /var/www/htdocs/asm/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/asm/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/asm/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/asm/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/asm/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/asm/app/Models/Create_Post_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/asm/app/Controllers/Create_Post.php(26): App\Models\Create_Post_model->insert_post()
+#6 /var/www/htdocs/asm/system/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+#7 /var/www/htdocs/asm/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/asm/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/asm/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 07:47:00 --> Column 'postUsername' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Create_Post_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Create_Post.php(26): App\Models\Create_Post_model->insert_post()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 08:20:44 --> mysqli_sql_exception: Column 'postUsername' cannot be null in /var/www/htdocs/asm/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/asm/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/asm/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/asm/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/asm/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/asm/app/Models/Create_Post_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+#5 /var/www/htdocs/asm/app/Controllers/Create_Post.php(27): App\Models\Create_Post_model->insert_post()
+#6 /var/www/htdocs/asm/system/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+#7 /var/www/htdocs/asm/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/asm/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/asm/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 08:20:44 --> Column 'postUsername' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Create_Post_model.php(19): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Create_Post.php(27): App\Models\Create_Post_model->insert_post()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

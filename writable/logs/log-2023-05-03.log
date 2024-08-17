@@ -1,0 +1,89 @@
+CRITICAL - 2023-05-03 10:31:44 --> Class "App\Controllers\Services" not found
+in APPPATH/Controllers/User_Images.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 10:36:03 --> Object of class CodeIgniter\Images\Handlers\GDHandler could not be converted to string
+in APPPATH/Views/user_images.php on line 7.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/User_Images.php(34): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 10:43:24 --> Object of class CodeIgniter\Images\Handlers\GDHandler could not be converted to string
+in APPPATH/Views/user_images.php on line 6.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/User_Images.php(31): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 10:48:32 --> Object of class CodeIgniter\Images\Handlers\GDHandler could not be converted to string
+in APPPATH/Views/user_images.php on line 6.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/User_Images.php(39): view()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 10:59:39 --> Class "App\Controllers\Services" not found
+in APPPATH/Controllers/User_Images.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:00:05 --> Image processing failed. Please verify that your server supports the chosen protocol and that the path to your image library is correct.
+in SYSTEMPATH/Images/Handlers/ImageMagickHandler.php on line 212.
+ 1 SYSTEMPATH/Images/Handlers/ImageMagickHandler.php(212): CodeIgniter\Images\Exceptions\ImageException::forImageProcessFailed()
+ 2 SYSTEMPATH/Images/Handlers/ImageMagickHandler.php(72): CodeIgniter\Images\Handlers\ImageMagickHandler->process()
+ 3 SYSTEMPATH/Images/Handlers/BaseHandler.php(256): CodeIgniter\Images\Handlers\ImageMagickHandler->_resize()
+ 4 APPPATH/Controllers/User_Images.php(23): CodeIgniter\Images\Handlers\BaseHandler->resize()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:01:10 --> File not found: "https://infs3202-332c22e4.uqcloud.net/asm/var/www/htdocs/asm/writable/uploads/644f718b1ab6b_20230410121220_1.jpg"
+in SYSTEMPATH/Files/File.php on line 47.
+ 1 SYSTEMPATH/Files/File.php(47): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound()
+ 2 SYSTEMPATH/Images/Handlers/BaseHandler.php(148): CodeIgniter\Files\File->__construct()
+ 3 APPPATH/Controllers/User_Images.php(23): CodeIgniter\Images\Handlers\BaseHandler->withFile()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:04:35 --> Image processing failed. Please verify that your server supports the chosen protocol and that the path to your image library is correct.
+in SYSTEMPATH/Images/Handlers/ImageMagickHandler.php on line 212.
+ 1 SYSTEMPATH/Images/Handlers/ImageMagickHandler.php(212): CodeIgniter\Images\Exceptions\ImageException::forImageProcessFailed()
+ 2 SYSTEMPATH/Images/Handlers/ImageMagickHandler.php(72): CodeIgniter\Images\Handlers\ImageMagickHandler->process()
+ 3 SYSTEMPATH/Images/Handlers/BaseHandler.php(256): CodeIgniter\Images\Handlers\ImageMagickHandler->_resize()
+ 4 APPPATH/Controllers/User_Images.php(23): CodeIgniter\Images\Handlers\BaseHandler->resize()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:31:12 --> view(): Argument #2 ($data) must be of type array, string given, called in /var/www/htdocs/asm/app/Controllers/Create_Post.php on line 30
+in SYSTEMPATH/Common.php on line 1172.
+ 1 APPPATH/Controllers/Create_Post.php(30): view()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-03 11:34:01 --> Undefined variable $sessionUsername
+in APPPATH/Views/upload_form.php on line 14.
+ 1 APPPATH/Views/upload_form.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/upload_form.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Create_Post.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Post->insert_post()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

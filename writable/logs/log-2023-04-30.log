@@ -1,0 +1,177 @@
+CRITICAL - 2023-04-30 00:37:31 --> Call to a member function setFrom() on string
+in APPPATH/Controllers/Create_Account.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 00:42:57 --> Call to a member function setFrom() on string
+in APPPATH/Controllers/Create_Account.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 00:44:52 --> Call to undefined method Config\Email::setFrom()
+in APPPATH/Controllers/Create_Account.php on line 57.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Create_Account->create_account()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-30 00:50:34 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-30 00:50:34 --> 
+ERROR - 2023-04-30 00:51:12 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-30 00:51:12 --> 
+ERROR - 2023-04-30 00:59:47 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-30 00:59:47 --> 
+ERROR - 2023-04-30 01:03:45 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-30 01:03:45 --> 
+ERROR - 2023-04-30 01:03:45 --> Failed to send confirmation email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 30 Apr 2023 01:03:45 +0000
+From: &quot;John - INFS3202 asm&quot; &lt;wilkinsonjohn.chan@uqconnect.edu.au&gt;
+Return-Path: &lt;wilkinsonjohn.chan@uqconnect.edu.au&gt;
+Reply-To: &lt;wilkinsonjohn.chan@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: wilkinsonjohn.chan@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;644dbe7158ba56.18922634@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+=?UTF-8?Q?Email=20Verification?=
+Please click the following link to verify your email address:
+https://infs3202-332c22e4.uqcloud.net/asm/verify_email2587cc8ea4f15b9ad8aa0bb4fd76d41e
+</pre>
+ERROR - 2023-04-30 01:09:27 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-30 01:09:27 --> 
+ERROR - 2023-04-30 01:09:27 --> Failed to send confirmation email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 30 Apr 2023 01:09:27 +0000
+From: &quot;John - INFS3202 asm&quot; &lt;wilkinsonjohn.chan@uqconnect.edu.au&gt;
+Return-Path: &lt;wilkinsonjohn.chan@uqconnect.edu.au&gt;
+Reply-To: &lt;wilkinsonjohn.chan@uqconnect.edu.au&gt;
+User-Agent: CodeIgniter
+X-Sender: wilkinsonjohn.chan@uqconnect.edu.au
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;644dbfc71ebe80.43299368@uqconnect.edu.au&gt;
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+=?UTF-8?Q?Email=20Verification?=
+Please click the following link to verify your email address:
+https://infs3202-332c22e4.uqcloud.net/asm/verify_email491973c3915a902211cfa1589e94e8f0
+</pre>
+CRITICAL - 2023-04-30 03:21:16 --> Class "App\Controllers\App\Models\User_model" not found
+in APPPATH/Controllers/Login.php on line 29.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 06:50:08 --> Undefined variable $recaptcha_data
+in APPPATH/Controllers/Login.php on line 40.
+ 1 APPPATH/Controllers/Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 06:51:01 --> Undefined variable $recaptcha_url
+in APPPATH/Controllers/Login.php on line 44.
+ 1 APPPATH/Controllers/Login.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->check_login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 11:46:57 --> Class "App\Models\Upload_model" not found
+in APPPATH/Controllers/User_Profile.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\User_Profile->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 11:48:37 --> Undefined variable $model
+in APPPATH/Controllers/User_Profile.php on line 16.
+ 1 APPPATH/Controllers/User_Profile.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\User_Profile->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 11:48:57 --> Class "App\Models\Upload_model" not found
+in APPPATH/Controllers/User_Profile.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\User_Profile->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 11:54:46 --> Class "App\Models\Upload_model" not found
+in APPPATH/Controllers/User_Profile.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\User_Profile->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 12:22:40 --> Class "App\Models\Upload_model" not found
+in APPPATH/Controllers/User_Profile.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\User_Profile->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 12:26:20 --> Undefined variable $imageFiles
+in APPPATH/Views/user_profile.php on line 10.
+ 1 APPPATH/Views/user_profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/User_Profile.php(28): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 12:27:22 --> Undefined variable $imageFiles
+in APPPATH/Views/user_profile.php on line 10.
+ 1 APPPATH/Views/user_profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/User_Profile.php(27): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 12:27:23 --> Undefined variable $imageFiles
+in APPPATH/Views/user_profile.php on line 10.
+ 1 APPPATH/Views/user_profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/User_Profile.php(27): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 12:31:44 --> Undefined variable $imageFiles
+in APPPATH/Views/user_profile.php on line 10.
+ 1 APPPATH/Views/user_profile.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/user_profile.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/User_Profile.php(27): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Profile->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 13:39:06 --> Class "App\Models\Upload_model" not found
+in APPPATH/Controllers/User_Images.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 13:39:45 --> foreach() argument must be of type array|object, bool given
+in APPPATH/Controllers/User_Images.php on line 17.
+ 1 APPPATH/Controllers/User_Images.php(17): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-30 13:42:44 --> Invalid file: "user_uploads.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/User_Images.php(26): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_Images->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
