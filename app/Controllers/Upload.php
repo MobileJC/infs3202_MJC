@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Upload_model;
+use App\Models\Check_Database_Exists_model;
 
 class Upload extends BaseController
 {
@@ -22,6 +23,8 @@ class Upload extends BaseController
     {
         $data['errors'] = "";
         $username = session()->get('username');
+        $checkExistModel = new Check_Databse_Exists_model();
+        $checkUserUploadsExist = $checkExistModel->checkAndCreateUploadsTable();
         $title = $this->request->getPost('title');
         $files = $this->request->getFiles();
 

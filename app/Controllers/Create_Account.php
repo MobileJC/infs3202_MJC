@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Create_Account_model;
+use App\Models\Check_Database_Exists_model;
 use Config\Services;
 use Config\Database;
 use CodeIgniter\Controller;
@@ -47,6 +48,9 @@ class Create_Account extends BaseController
         $session = session();
 
         $model = new Create_Account_model();
+        $checkExistModel = new Check_Databse_Exists_model();
+
+        $checkUserTableExist = $checkExistModel->checkAndCreateUsersTable();
 
         $check_exist = $model->check_account_exist($username);
 

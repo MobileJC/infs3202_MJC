@@ -36,7 +36,7 @@ class Login extends BaseController
         $model = new User_model();
         $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
         $recaptchaData = [
-            'secret'    => '',
+            'secret'    => '6Ld3kswlAAAAADgHUY_wv7Az10OorUTYw76CZTyW',
             'response'  => $recaptchaResponse,
             'remoteip'  => $this->request->getIPAddress(),
         ];

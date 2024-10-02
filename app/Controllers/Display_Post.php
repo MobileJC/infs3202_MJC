@@ -2,11 +2,16 @@
 
 namespace App\Controllers;
 use App\Models\Display_Post_Model;
+use App\Models\Check_Database_Exists_model;
+
 
 class Display_Post extends BaseController
 {
     public function index()
     {
+        $checkTableExistModel = new Check_Databse_Exists_model();
+        $checkPostTableExist = $checkTableExistModel->checkAndCreatePostTable();
+        
         $model = new Display_Post_Model();
         $allPost['data'] = $model->getAllPost();
         $sessionUsername = session()->get('username');
@@ -24,6 +29,9 @@ class Display_Post extends BaseController
     
     public function search()
     {
+        $checkTableExistModel = new Check_Databse_Exists_model();
+        $checkPostTableExist = $checkTableExistModel->checkAndCreatePostTable();
+
         $model = new Display_Post_Model();
         $search = $this->request->getVar('search');
 

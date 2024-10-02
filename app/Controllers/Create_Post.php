@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\Create_Post_model;
+use App\Models\Check_Database_Exists_model;
 
 class Create_Post extends BaseController
 {
@@ -21,6 +22,7 @@ class Create_Post extends BaseController
     }
 
     public function insert_post() {
+
         $session = session();
         $postUsername = $session->get('username');
         $postTitle = $this->request->getPost('postTitle');
@@ -28,6 +30,9 @@ class Create_Post extends BaseController
         $postDatetime = date('Y-m-d H:i:s', time());
         $postCourse = $this->request->getPost('postCourse');
         $postContent = $this->request->getPost('postContent');
+
+        $checkTableExistModel = new Check_Databse_Exists_model();
+        $checkPostTableExist = $checkTableExistModel->checkAndCreatePostTable();
         
         $model = new Create_Post_model();
         $insertPost = $model->insert_post($postUsername, $postTitle, $postDatetime, $postCourse, $postContent);
