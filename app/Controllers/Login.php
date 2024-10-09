@@ -15,7 +15,7 @@ class Login extends BaseController
         } else {
             // Check if the "user" cookie exists and pre-fill the username field
             $cookie_name = 'user';
-            if(isset($_COOKIE[$cookie_name])){
+            if (isset($_COOKIE[$cookie_name])) {
                 $data['username'] = $_COOKIE[$cookie_name];
             } else {
                 $data['username'] = '';
@@ -31,9 +31,12 @@ class Login extends BaseController
         $data['error'] = "<div class=\"alert alert-danger\" role=\"alert\"> Incorrect username or password!! </div> ";
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
-        $recaptchaResponse = $this->request->getPost('g-recaptcha-response');
+        // $recaptchaResponse = $this->request->getPost('g-recaptcha-response');
         $check = false;
         $model = new User_model();
+
+        // Commenting out Google reCAPTCHA validation
+        /*
         $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
         $recaptchaData = [
             'secret'    => '6Ld3kswlAAAAADgHUY_wv7Az10OorUTYw76CZTyW',
@@ -59,11 +62,9 @@ class Login extends BaseController
             echo view('template/footer');
             return;
         }
+        */
 
         $user = $model->login($username);
-//        echo "<pre>";
-//        print_r($user);
-//        echo "</pre>";
 
         if ($user && password_verify($password, $user['password'])) {
             $session = session();
@@ -85,12 +86,10 @@ class Login extends BaseController
         $cookie_name = 'user';
         $cookie_value = $username;
         # Set cookie for 6 hours if remember me is set
-        if(isset($rememberMeChecked))
-        {
-            setcookie($cookie_name, $cookie_value, time()+3600*6,"/");
-        }
-        else{
-            setcookie($cookie_name, $cookie_value, time()-3600,"/");
+        if (isset($rememberMeChecked)) {
+            setcookie($cookie_name, $cookie_value, time() + 3600 * 6, "/");
+        } else {
+            setcookie($cookie_name, $cookie_value, time() - 3600, "/");
         }
     }
 

@@ -15,9 +15,11 @@
 					<div class="form-group">
 						<?php echo $error; ?>
 					</div>
-					<div class="form-group">
-					<div class="g-recaptcha" data-sitekey="6Ld3kswlAAAAAJWX6GQtqx9oSZmkY6xX5_JbOdJ2"></div>
-					</div>
+					<!--
+						<div class="form-group">
+							<div class="g-recaptcha" data-sitekey="6Ld3kswlAAAAAJWX6GQtqx9oSZmkY6xX5_JbOdJ2"></div>
+						</div>
+					 -->
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary btn-block">Log in</button>
 					</div>
