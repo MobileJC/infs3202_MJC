@@ -48,7 +48,7 @@ class Create_Account extends BaseController
         $session = session();
 
         $model = new Create_Account_model();
-        $checkExistModel = new Check_Databse_Exists_model();
+        $checkExistModel = new Check_Database_Exists_model();
 
         $checkUserTableExist = $checkExistModel->checkAndCreateUsersTable();
 
