@@ -29,8 +29,6 @@ class Database extends Config
         'hostname' => 'db',
         # 'username' => 'root',
         'username' => 'infs3208_MJC', // the database infs3202_MJC-main exists in this account
-        # 'password' => 'e9e39a599e7eedc16fb2fd38', // 2023 S1 INFS3202 mysql pw
-        # 'password' => '315a5bbf65711091477ead96', // public UQCloud mysql pw
         # 'password' => 'password', // docker sql password goes to here
         'password' => 'infs3208_MJC_pw',
         'database' => 'infs3202_MJC_main', // modify the databse name in docker-compose file
