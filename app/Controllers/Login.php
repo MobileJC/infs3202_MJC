@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\User_model;
+use App\Models\Check_Database_Exists_model;
 
 class Login extends BaseController
 {
@@ -34,6 +35,7 @@ class Login extends BaseController
         // $recaptchaResponse = $this->request->getPost('g-recaptcha-response');
         $check = false;
         $model = new User_model();
+        $checkExistModel = new Check_Database_Exists_model();
 
         // Commenting out Google reCAPTCHA validation
         /*
@@ -64,19 +66,33 @@ class Login extends BaseController
         }
         */
 
-        $user = $model->login($username);
+        $tableStatus = $checkExistModel->checkAndCreateUsersTable();
 
-        if ($user && password_verify($password, $user['password'])) {
-            $session = session();
-            $session->set('username', $username);
-            $session->set('password', $password);
-            $this->remember_me($username);
-            return redirect()->to(base_url('forum_main'));
+        if ($tableStatus === "Table 'users' already exists.") {
+            // Check if any records exist in the 'users' table
+            $usersExist = $model->countAll(); // Use CodeIgniter's built-in method to count rows
+
+            if ($usersExist == 0) {
+                $data['error'] = "<div class=\"alert alert-danger\" role=\"alert\"> Please create an account. :) </div>";
+                return redirect()->to(base_url('login'))->withInput()->with('data', $data);
+            }
+            
+            $user = $model->login($username);
+            
+            if ($user && password_verify($password, $user['password'])) {
+                $session = session();
+                $session->set('username', $username);
+                $session->set('password', $password);
+                $this->remember_me($username);
+                return redirect()->to(base_url('forum_main'));
+            } else {
+                $data['username'] = $username;
+                return redirect()->to(base_url('login'))->withInput()->with('data', $data);
+            }
         } else {
-            $data['username'] = $username;
-            echo view('template/header');
-            echo view('login', $data);
-            echo view('template/footer');
+                // If the 'users' table doesn't exist, show error
+                $data['error'] = "<div class=\"alert alert-danger\" role=\"alert\"> Please create an account. :) </div>";
+                return redirect()->to(base_url('login'))->withInput()->with('data', $data);
         }
     }
 
