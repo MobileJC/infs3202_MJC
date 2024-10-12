@@ -33,7 +33,7 @@ class Database extends Config
         # 'password' => '315a5bbf65711091477ead96', // public UQCloud mysql pw
         # 'password' => 'password', // docker sql password goes to here
         'password' => 'infs3208_MJC_pw',
-        'database' => 'infs3202_MJC-main', // modify the databse name in docker-compose file
+        'database' => 'infs3202_MJC_main', // modify the databse name in docker-compose file
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
