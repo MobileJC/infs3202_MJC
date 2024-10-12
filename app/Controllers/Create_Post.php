@@ -31,7 +31,7 @@ class Create_Post extends BaseController
         $postCourse = $this->request->getPost('postCourse');
         $postContent = $this->request->getPost('postContent');
 
-        $checkTableExistModel = new Check_Databse_Exists_model();
+        $checkTableExistModel = new Check_Database_Exists_model();
         $checkPostTableExist = $checkTableExistModel->checkAndCreatePostTable();
         
         $model = new Create_Post_model();

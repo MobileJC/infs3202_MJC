@@ -13,7 +13,7 @@ class Post_Comment extends BaseController
     public function index()
     {
 
-        $checkExistModel = new Check_Databse_Exists_model();
+        $checkExistModel = new Check_Database_Exists_model();
         $checkCommentTableExist = $checkExistModel->checkAndCreateCommentTable();
         $model = new Post_Comment_model();
         $posts = $model->getFromPost();

@@ -9,7 +9,7 @@ class Display_Post extends BaseController
 {
     public function index()
     {
-        $checkTableExistModel = new Check_Databse_Exists_model();
+        $checkTableExistModel = new Check_Database_Exists_model();
         $checkPostTableExist = $checkTableExistModel->checkAndCreatePostTable();
         
         $model = new Display_Post_Model();

@@ -23,7 +23,7 @@ class Upload extends BaseController
     {
         $data['errors'] = "";
         $username = session()->get('username');
-        $checkExistModel = new Check_Databse_Exists_model();
+        $checkExistModel = new Check_Database_Exists_model();
         $checkUserUploadsExist = $checkExistModel->checkAndCreateUploadsTable();
         $title = $this->request->getPost('title');
         $files = $this->request->getFiles();
