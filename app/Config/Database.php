@@ -31,7 +31,7 @@ class Database extends Config
         'username' => 'infs3208_MJC', // the database infs3202_MJC-main exists in this account
         # 'password' => 'password', // docker sql password goes to here
         'password' => 'infs3208_MJC_pw',
-        'database' => 'infs3202_MJC_main', // modify the databse name in docker-compose file
+        'database' => 'infs3202_MJC-main', // modify the databse name in docker-compose file
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
