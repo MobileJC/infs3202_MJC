@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\User_model;
+use App\Models\Check_Database_Exists_model;
 
 class Login extends BaseController
 {
@@ -15,7 +16,7 @@ class Login extends BaseController
         } else {
             // Check if the "user" cookie exists and pre-fill the username field
             $cookie_name = 'user';
-            if(isset($_COOKIE[$cookie_name])){
+            if (isset($_COOKIE[$cookie_name])) {
                 $data['username'] = $_COOKIE[$cookie_name];
             } else {
                 $data['username'] = '';
@@ -31,12 +32,16 @@ class Login extends BaseController
         $data['error'] = "<div class=\"alert alert-danger\" role=\"alert\"> Incorrect username or password!! </div> ";
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
-        $recaptchaResponse = $this->request->getPost('g-recaptcha-response');
+        // $recaptchaResponse = $this->request->getPost('g-recaptcha-response');
         $check = false;
         $model = new User_model();
+        $checkExistModel = new Check_Database_Exists_model();
+
+        // Commenting out Google reCAPTCHA validation
+        /*
         $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
         $recaptchaData = [
-            'secret'    => '',
+            'secret'    => '6Ld3kswlAAAAADgHUY_wv7Az10OorUTYw76CZTyW',
             'response'  => $recaptchaResponse,
             'remoteip'  => $this->request->getIPAddress(),
         ];
@@ -59,23 +64,35 @@ class Login extends BaseController
             echo view('template/footer');
             return;
         }
+        */
 
-        $user = $model->login($username);
-//        echo "<pre>";
-//        print_r($user);
-//        echo "</pre>";
+        $tableStatus = $checkExistModel->checkAndCreateUsersTable();
 
-        if ($user && password_verify($password, $user['password'])) {
-            $session = session();
-            $session->set('username', $username);
-            $session->set('password', $password);
-            $this->remember_me($username);
-            return redirect()->to(base_url('forum_main'));
+        if ($tableStatus === "Table 'users' already exists.") {
+            // Check if any records exist in the 'users' table
+            $usersExist = $model->countAll(); // Use CodeIgniter's built-in method to count rows
+
+            if ($usersExist == 0) {
+                $data['error'] = "<div class=\"alert alert-danger\" role=\"alert\"> Please create an account. :) </div>";
+                return redirect()->to(base_url('login'))->withInput()->with('data', $data);
+            }
+            
+            $user = $model->login($username);
+            
+            if ($user && password_verify($password, $user['password'])) {
+                $session = session();
+                $session->set('username', $username);
+                $session->set('password', $password);
+                $this->remember_me($username);
+                return redirect()->to(base_url('forum_main'));
+            } else {
+                $data['username'] = $username;
+                return redirect()->to(base_url('login'))->withInput()->with('data', $data);
+            }
         } else {
-            $data['username'] = $username;
-            echo view('template/header');
-            echo view('login', $data);
-            echo view('template/footer');
+                // If the 'users' table doesn't exist, show error
+                $data['error'] = "<div class=\"alert alert-danger\" role=\"alert\"> Please create an account. :) </div>";
+                return redirect()->to(base_url('login'))->withInput()->with('data', $data);
         }
     }
 
@@ -85,12 +102,10 @@ class Login extends BaseController
         $cookie_name = 'user';
         $cookie_value = $username;
         # Set cookie for 6 hours if remember me is set
-        if(isset($rememberMeChecked))
-        {
-            setcookie($cookie_name, $cookie_value, time()+3600*6,"/");
-        }
-        else{
-            setcookie($cookie_name, $cookie_value, time()-3600,"/");
+        if (isset($rememberMeChecked)) {
+            setcookie($cookie_name, $cookie_value, time() + 3600 * 6, "/");
+        } else {
+            setcookie($cookie_name, $cookie_value, time() - 3600, "/");
         }
     }
 

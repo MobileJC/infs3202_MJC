@@ -11,8 +11,10 @@
 					<div class="form-group">
 						<select id="course" name="postCourse" required="required">
 							<option selected disabled hidden>Please choose your course</option>
-							<option value="INFS3200">INFS3202</option>
-							<option value="INFS7200">INFS7202</option>
+							<option value="INFS3202">INFS3202</option>
+							<option value="INFS7202">INFS7202</option>
+							<option value="INFS3208">INFS3208</option>
+							<option value="INFS7208">INFS7208</option>
 						</select>
 					</div>
 					<p>Content: </p>

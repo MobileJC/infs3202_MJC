@@ -26,10 +26,12 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => 'e9e39a599e7eedc16fb2fd38',
-        'database' => 'asm',
+        'hostname' => 'db',
+        # 'username' => 'root',
+        'username' => 'infs3208_MJC', // the database infs3202_MJC-main exists in this account
+        # 'password' => 'password', // docker sql password goes to here
+        'password' => 'infs3208_MJC_pw',
+        'database' => 'infs3202_MJC-main', // modify the databse name in docker-compose file
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
