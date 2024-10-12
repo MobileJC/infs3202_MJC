@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Check_Database_Exists_model extends model
+class Check_Database_Exists_model extends Model
 {
 	protected $userTableName = 'users';
 	protected $postTableName = 'post';
