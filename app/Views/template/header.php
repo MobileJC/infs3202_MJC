@@ -2,9 +2,9 @@
 
 <head>
     <title>INFS3202 Asm</title>
-    <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/css/bootstrap.css'); ?>">
-    <script src="<?php echo site_url('assets/js/jquery-3.6.0.min.js'); ?>"></script>
-    <script src="<?php echo site_url('assets/js/bootstrap.js'); ?>"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo site_url('public/assets/css/bootstrap.css'); ?>">
+    <script src="<?php echo site_url('public/assets/js/jquery-3.6.0.min.js'); ?>"></script>
+    <script src="<?php echo site_url('public/assets/js/bootstrap.js'); ?>"></script>
 </head>
 
 
