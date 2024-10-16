@@ -17,7 +17,7 @@ Options -Indexes
 	# RewriteBase /
 
 	# Allow direct access to assets
-    RewriteRule ^assets/(.*)$ /var/www/html/assets/$1 [L]
+    # RewriteRule ^assets/(.*)$ /var/www/html/assets/$1 [L]
 
 	# Redirect Trailing Slashes...
 	RewriteCond %{REQUEST_FILENAME} !-d
